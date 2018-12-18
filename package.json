@@ -1,0 +1,51 @@
+{
+  "name": "@fiverr/react-benchmark",
+  "version": "0.0.0",
+  "description": "⏱ Benchmark react component rendering",
+  "homepage": "https://github.com/fiverr/react-benchmark#readme",
+  "license": "MIT",
+  "author": "Fiverr SRE <sre@fiverr.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fiverr/react-benchmark.git"
+  },
+  "keywords": [
+    "React",
+    "benchmark",
+    "performance",
+    "time",
+    "component",
+    "measure",
+    "⏱"
+  ],
+  "bin": {
+    "react-benchmark": "./bin/index.js"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint '*.js' '**/*.js' --config .eslintrc.js --ignore-path .eslintignore"
+  },
+  "dependencies": {
+    "@does/exist": "^1.0.0",
+    "@lets/sleep": "^1.0.0",
+    "async-execute": "^1.0.1",
+    "await-reduce": "^1.2.3",
+    "recursive-readdir": "^2.2.2",
+    "rmext": "0.0.1",
+    "yargs": "^12.0.5"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@fiverr/eslint-config-fiverr": "^2.0.1",
+    "eslint": "^5.10.0",
+    "jest": "^23.6.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
