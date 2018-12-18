@@ -4,7 +4,12 @@
  * @param  {Number}   [options.times=50]
  * @return {Number}
  */
-module.exports = async function average({measure, times = 50}) {
-    const sums = await Promise.all(new Array(times).fill(measure).map((m) => m()));
+module.exports = async function average({measure, clean = () => null, times = 50}) {
+    const sums = [];
+    const promises = new Array(times).fill(measure);
+    while (promises.length) {
+        sums.push(await promises.pop()());
+        await clean();
+    }
     return sums.map(Number).reduce((a, b) => a + b) / times;
 };

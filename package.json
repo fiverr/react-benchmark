@@ -1,6 +1,6 @@
 {
   "name": "@fiverr/react-benchmark",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "⏱ Benchmark react component rendering",
   "homepage": "https://github.com/fiverr/react-benchmark#readme",
   "license": "MIT",
